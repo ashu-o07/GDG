@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/intt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Interests"
+                android:textAlignment="center"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/experties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What's your Area of Expertise?*"
+
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Designing"
+                 />
+
+            <CheckBox
+                android:id="@+id/mar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marketing"
+                 />
+
+            <CheckBox
+                android:id="@+id/wri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Writing"
+                />
+
+            <CheckBox
+                android:id="@+id/pro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Programming"
+                 />
+
+            <CheckBox
+                android:id="@+id/man"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Management"
+                 />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Technologies you are good at? *"
+
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/py"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Python" />
+
+            <CheckBox
+                android:id="@+id/js"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JavaScript" />
+
+            <CheckBox
+                android:id="@+id/react"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="React" />
+
+            <CheckBox
+                android:id="@+id/ang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Angular" />
+
+            <CheckBox
+                android:id="@+id/html"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HTML + CSS" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="Specializations you are working in? *"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/wdev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="web development" />
+
+            <CheckBox
+                android:id="@+id/adev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="app development" />
+
+            <CheckBox
+                android:id="@+id/sdev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="software development" />
+
+            <CheckBox
+                android:id="@+id/ds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Science" />
+
+            <CheckBox
+                android:id="@+id/ccm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cloud computing" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_default_elevation"
+                android:background="@color/colorPrimary"
+                android:text="Next"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
