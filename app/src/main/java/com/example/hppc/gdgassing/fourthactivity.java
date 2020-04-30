@@ -45,7 +45,9 @@ public class fourthactivity  extends AppCompatActivity {
                 i.putStringArrayListExtra("tech",getIntent().getExtras().getStringArrayList("tech"));
                 i.putStringArrayListExtra("special",getIntent().getExtras().getStringArrayList("special"));
                 i.putStringArrayListExtra("profile",profile);
+                if(li.getText().toString().length()!=0 && fb.getText().toString().length()!=0 && res.getText().toString().length()!=0 && gh.getText().toString().length()!=0)
                 startActivity(i);
+
             }
         });
 

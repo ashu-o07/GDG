@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button startBtn;
+    Button startBtn;Button onlineBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         startBtn=(Button)findViewById(R.id.button);
+        onlineBtn=(Button)findViewById(R.id.onlinebutton);
 
        startBtn.setOnClickListener(new View.OnClickListener(){
 
@@ -40,6 +41,16 @@ public class MainActivity extends AppCompatActivity {
 
            }
        });
+        onlineBtn.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,onlinefeedback.class);
+                startActivity(i);
+
+            }
+        });
+
 
 
     }

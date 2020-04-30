@@ -35,7 +35,13 @@
             android:name=".fifthactivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".onlinefeedback"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
 
 </manifest>

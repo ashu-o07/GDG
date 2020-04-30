@@ -17,7 +17,7 @@ public class adp extends RecyclerView.Adapter<adp.FeedBackViewHolder> {
     public adp(ArrayList<ArrayList<String>> ar){
         arr=ar;
         ArrayList<String> g= new ArrayList<String>();
-        g.add("ashish");g.add("ashish@xyz.com");g.add("IIIT Bhopal");g.add("000000000");g.add("2nd year");g.add("Male");g.add("20");
+        g.add("RcViewTester");g.add("ashish@xyz.com");g.add("IIIT Bhopal");g.add("000000000");g.add("2nd year");g.add("Male");g.add("20");
         arr.add(g);
 
 

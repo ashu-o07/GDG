@@ -14,6 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 import java.util.ArrayList;
 
 public class thirdactivity extends AppCompatActivity {
+    int x=0,y=0,z=0;
     CheckBox design,mark,writ,prog,manage;
     CheckBox py,js,react,ang,html;
     CheckBox wd,ad,sd,cc,ds;
@@ -24,6 +25,7 @@ public class thirdactivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.thirdactivity);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -48,29 +50,35 @@ public class thirdactivity extends AppCompatActivity {
         ds=(CheckBox)findViewById(R.id.ds);
         next=(Button)findViewById(R.id.button3);
 
-        if(design.isChecked()) expert.add("Designing");
-        if(mark.isChecked()) expert.add("Marketing");
-        if(writ.isChecked()) expert.add("writing");
-        if(prog.isChecked()) expert.add("Programming");
-        if(manage.isChecked()) expert.add("Management");
-        if(py.isChecked()) tech.add("Python");
-        if(js.isChecked()) tech.add("JavaScript");
-        if(react.isChecked()) tech.add("React");
-        if(ang.isChecked()) tech.add("Angular");
-        if(html.isChecked()) tech.add("HTML and CSS");
-        if(wd.isChecked()) special.add("Web Development");
-        if(ad.isChecked()) special.add("App Developmane");
-        if(sd.isChecked()) special.add("Software Developmane");
-        if(cc.isChecked()) special.add("Cloud Computing");
-        if(ds.isChecked()) special.add("Data science");
+        if(design.isChecked()) {expert.add("Designing");this.x++;}
+        if(mark.isChecked()) {expert.add("Marketing");this.x++;}
+        if(writ.isChecked()) {expert.add("writing");this.x++;}
+        if(prog.isChecked()) {expert.add("Programming");this.x++;}
+        if(manage.isChecked()) {expert.add("Management");this.x++;}
+        if(py.isChecked()) {tech.add("Python");this.y++;}
+        if(js.isChecked()) {tech.add("JavaScript");this.y++;}
+        if(react.isChecked()) {tech.add("React");this.y++;}
+        if(ang.isChecked()) {tech.add("Angular");this.y++;}
+        if(html.isChecked()) {tech.add("HTML and CSS");this.y++;}
+        if(wd.isChecked()) {special.add("Web Development");this.z++;}
+        if(ad.isChecked()) {special.add("App Developmane");this.z++;}
+        if(sd.isChecked()) {special.add("Software Developmane");this.z++;}
+        if(cc.isChecked()) {special.add("Cloud Computing");this.z++;}
+        if(ds.isChecked()) {special.add("Data science");this.z++;
+            }
         next.setOnClickListener(new View.OnClickListener() {
+
             @Override
+
             public void onClick(View view) {
+
                 Intent i = new Intent(thirdactivity.this,fourthactivity.class);
                 i.putStringArrayListExtra("info",getIntent().getExtras().getStringArrayList("info"));
                 i.putStringArrayListExtra("expert",expert);
                 i.putStringArrayListExtra("tech",tech);
                 i.putStringArrayListExtra("special",special);
+               System.out.println(z+ x+  y);
+
                 startActivity(i);
             }
         });
